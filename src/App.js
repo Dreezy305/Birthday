@@ -4,6 +4,10 @@ import ConfettiExplosion from "react-confetti-explosion";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./App.css";
+import m1 from "./asset/m1.jpeg";
+import m2 from "./asset/m2.jpeg";
+import m3 from "./asset/m3.jpeg";
+import m4 from "./asset/m4.jpeg";
 import logo from "./asset/mariam.jpeg";
 
 function App() {
@@ -13,14 +17,14 @@ function App() {
   const properties = {
     duration: 5000,
     autoplay: true,
-    transitionDuration: 100,
+    transitionDuration: 300,
     arrows: false,
     infinite: true,
     easing: "ease",
     // indicators: (i) => <div className="indicator">{i + 1}</div>,
   };
 
-  const slideImages = [logo, logo, logo];
+  const slideImages = [m2, m3, m4, m1, logo];
 
   useEffect(() => {
     setIsExploding(true);
