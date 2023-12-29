@@ -1,14 +1,14 @@
 import "animate.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
-import { Fade, Slide } from "react-slideshow-image";
+import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./App.css";
 import logo from "./asset/mariam.jpeg";
 
 function App() {
   const [isExploding, setIsExploding] = useState(false);
-  const slideRef = useRef();
+  // const slideRef = useRef();
 
   const properties = {
     duration: 5000,
