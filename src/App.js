@@ -16,7 +16,7 @@ function App() {
           className="birthday animate__animated animate__fadeInLeftBig animate__slow"
           style={{}}
         >
-          Happy Birthday to you Babe!
+          Happy Birthday in advance Babe!
         </p>
         <span className="animate__animated animate__fadeInRight animate__slow prayer">
           Long life and prosperity.
