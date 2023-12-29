@@ -12,15 +12,20 @@ function App() {
           alt="logo"
           style={{ borderRadius: "20px" }}
         />
-        <p
-          className="birthday animate__animated animate__fadeInLeftBig animate__slow"
-          style={{}}
-        >
-          Happy Birthday in advance Babe!
-        </p>
-        <span className="animate__animated animate__fadeInRight animate__slow prayer">
-          Long life and prosperity.
-        </span>
+        <div className="" style={{ width: "50%" }}>
+          <p
+            className="birthday animate__animated animate__fadeInLeftBig animate__slow"
+            style={{}}
+          >
+            🎉🎈🎉 Happy Birthday, Babe! 🎉🎈🎉
+          </p>
+          <span className="animate__animated animate__fadeInRight animate__slow prayer">
+            Happy Birthday, my love! 🎉 Your presence lights up my world. Here's
+            to more joy, laughter, and love together. Cheers to your special day
+            and a lifetime of happiness. I love you endlessly
+            ✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂
+          </span>
+        </div>
       </header>
     </div>
   );
