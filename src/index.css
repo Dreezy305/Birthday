@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffcccc !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: BricolageGrotesqueMedium;
+  src: url("./asset/fonts/BricolageGrotesque-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: BricolageGrotesqueSemiBold;
+  src: url("./asset/fonts/BricolageGrotesque-SemiBold.ttf");
+  font-weight: 600;
+}
+
+.birthday {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  color: black;
+  font-family: BricolageGrotesqueSemiBold;
+}
+
+.prayer {
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  font-family: BricolageGrotesqueMedium;
+}
