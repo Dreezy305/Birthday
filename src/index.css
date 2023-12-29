@@ -37,4 +37,6 @@ code {
   font-size: 20px;
   color: black;
   font-family: BricolageGrotesqueMedium;
+  width: 50%;
+  margin: auto;
 }
