@@ -4,15 +4,13 @@ import ConfettiExplosion from "react-confetti-explosion";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./App.css";
-import m1 from "./asset/m1.jpeg";
-import m2 from "./asset/m2.jpeg";
-import m3 from "./asset/m3.jpeg";
-import m4 from "./asset/m4.jpeg";
-import logo from "./asset/mariam.jpeg";
+import m1 from "./asset/meej1.jpeg";
+import logo from "./asset/meej1copy.jpeg";
+import m2 from "./asset/meej2.jpeg";
+import m3 from "./asset/meej3.jpeg";
 
 function App() {
   const [isExploding, setIsExploding] = useState(false);
-  // const slideRef = useRef();
 
   const properties = {
     duration: 5000,
@@ -24,7 +22,7 @@ function App() {
     // indicators: (i) => <div className="indicator">{i + 1}</div>,
   };
 
-  const slideImages = [m2, m3, m4, m1, logo];
+  const slideImages = [m2, m3, m1, logo];
 
   useEffect(() => {
     setIsExploding(true);
@@ -72,12 +70,12 @@ function App() {
               className="birthday animate__animated animate__fadeInLeftBig animate__slow"
               style={{}}
             >
-              🎉🎈🎉 Happy Birthday, Babe! 🎉🎈🎉
+              🎉🎈🎉 Happy Birthday, Meejay! 🎉🎈🎉
             </p>
             <span className="animate__animated animate__fadeInRight animate__slow prayer">
-              Happy Birthday, my love! 🎉 Your presence lights up my world.
-              Here's to more joy, laughter, and love together. Cheers to your
-              special day and a lifetime of happiness. I love you endlessly
+              Happy birthday biggest sis 🎉, you mean so much to us. May Allah's
+              rahma, sekinah and Ibadan always be on you. Blessings on
+              blessings, we love you.
               ✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂
             </span>
           </div>
