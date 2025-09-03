@@ -1,5 +1,5 @@
 import "animate.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -11,6 +11,8 @@ import m3 from "./asset/meej3.jpeg";
 
 function App() {
   const [isExploding, setIsExploding] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
 
   const properties = {
     duration: 5000,
@@ -28,9 +30,64 @@ function App() {
     setIsExploding(true);
   }, []);
 
+  const handlePlayAudio = () => {
+    setIsPlaying(true);
+    if (audioRef.current) {
+      audioRef.current
+        .play()
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch((error) => {
+          console.error("Audio playback failed:", error);
+        });
+    }
+  };
+
+  const toggleMute = () => {
+    if (audioRef.current) {
+      audioRef.current.muted = !audioRef.current.muted;
+      setIsPlaying(!audioRef.current.muted);
+    }
+  };
+
   return (
     <>
       <div className="App">
+        <audio autoPlay={true} ref={audioRef} loop style={{ display: "none" }}>
+          <source
+            src="https://www.epidemicsound.com/music/tracks/9a95dbcf-6c7d-30b1-869c-a19ec4f94f11/"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <div style={{ textAlign: "center", padding: "10px", display: "none" }}>
+          <button
+            onClick={handlePlayAudio}
+            style={{
+              padding: "10px 20px",
+              marginRight: "10px",
+              backgroundColor: "#FFD700",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}
+          >
+            Play Birthday Song 🎶
+          </button>
+          <button
+            onClick={toggleMute}
+            style={{
+              padding: "10px 20px",
+              backgroundColor: "#FFD700",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}
+          >
+            {isPlaying ? "Mute" : "Unmute"} 🎵
+          </button>
+        </div>
         <Fade {...properties}>
           {slideImages.map((each, index) => (
             <div
