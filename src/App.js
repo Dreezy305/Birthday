@@ -70,7 +70,7 @@ function App() {
               className="birthday animate__animated animate__fadeInLeftBig animate__slow"
               style={{}}
             >
-              🎉🎈🎉 Happy Birthday, Meejay! 🎉🎈🎉
+              🎉🎈🎉 Happy Birthday, Iya! 🎉🎈🎉
             </p>
             <span className="animate__animated animate__fadeInRight animate__slow prayer">
               Happy birthday biggest sis 🎉, you mean so much to us. May Allah's
