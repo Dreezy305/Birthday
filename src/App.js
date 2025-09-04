@@ -131,7 +131,7 @@ function App() {
             </p>
             <span className="animate__animated animate__fadeInRight animate__slow prayer">
               Happy birthday biggest sis 🎉, you mean so much to us. May Allah's
-              rahma, sekinah and Ibadan always be on you. Blessings on
+              rahma, sekinah and Ibadah always be on you. Blessings on
               blessings, we love you.
               ✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂✨🎈🌟🎂
             </span>
